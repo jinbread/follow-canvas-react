@@ -16,7 +16,6 @@ class FollowMove extends Component {
       y: e.nativeEvent.offsetY 
     });
   }
-
   componentDidMount() {
     this.componentDidUpdate();
   }
@@ -50,8 +49,7 @@ class FollowMove extends Component {
               width={500} 
               height={500} 
               style={{border: '2px dashed white'}}
-              onMouseMove={this._onMouseMove.bind(this)}
-              onTouchMove={this._onMouseMove.bind(this)}
+              onPointerMove={this._onMouseMove.bind(this)}
             />
           </div>
         </header>
